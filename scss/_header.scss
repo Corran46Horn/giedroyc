@@ -3,21 +3,17 @@ nav {
   width: 100%;
   z-index: 99;
   .name-wrap {
-    padding: 21px 0;
     display: block;
     color: $black;
   }
   .menu:not(.mobile-menu) {
     list-style: none;
-    justify-content: flex-end;
-    flex-wrap: wrap;
     li {
       float: right;
+      padding: 66px 10px 0;
       a {
-        padding: 60px 20px;
-        display: block;
-        @include font-size(20);
-        @include line-height(24);
+        @include font-size(18);
+        @include line-height(22);
         @include uppercase;
         @include easy-transform-fast;
         color: $black;
@@ -27,20 +23,20 @@ nav {
           position: absolute;
           @include easy-transform-fast;
           width: fit-content;
-          bottom: 50px;
+          bottom: 0;
           height: 2px;
-          background: $museum-orange;
+          background: $gray;
           left: -50px;
           opacity: 0;
-          width: auto;
+          width: 100%;
         }
       }
       &:hover {
         a {
-          color: $museum-orange;
+          color: $gray;
           &::after {
-            left: 20px;
-            right: 20px;
+            left: 0px;
+            right: 0px;
             opacity: 1;
           }
         }

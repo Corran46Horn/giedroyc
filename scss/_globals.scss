@@ -146,7 +146,7 @@ body,
 html {
   line-height: #{$font-size}px;
   font-size: #{$font-size}px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
   position: relative;
   max-width: 100%;
   overflow-x: hidden;
@@ -252,14 +252,14 @@ strong {
   font-weight: 900;
   font-style: normal;
   @include font-size(50);
-  @include line-height(50);
-  margin-bottom: 0;
+  @include line-height(56);
+  margin-bottom: 10px;
 }
 .subtitle {
   font-family: 'Oswald', sans-serif;
   @include uppercase;
-  @include font-size(24);
-  @include line-height(20);
+  @include font-size(18);
+  @include line-height(22);
 }
 
 .single-section {

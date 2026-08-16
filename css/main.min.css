@@ -74,7 +74,7 @@ body,
 html {
   line-height: 16px;
   font-size: 16px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Oswald", sans-serif;
   position: relative;
   max-width: 100%;
   overflow-x: hidden;
@@ -215,15 +215,15 @@ strong {
   font-weight: 900;
   font-style: normal;
   font-size: 3.125rem;
-  line-height: 3.125rem;
-  margin-bottom: 0;
+  line-height: 3.5rem;
+  margin-bottom: 10px;
 }
 
 .subtitle {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  font-size: 1.5rem;
-  line-height: 1.25rem;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
 }
 
 .single-section {
@@ -277,23 +277,19 @@ nav {
   z-index: 99;
 }
 nav .name-wrap {
-  padding: 21px 0;
   display: block;
   color: #000;
 }
 nav .menu:not(.mobile-menu) {
   list-style: none;
-  justify-content: flex-end;
-  flex-wrap: wrap;
 }
 nav .menu:not(.mobile-menu) li {
   float: right;
+  padding: 66px 10px 0;
 }
 nav .menu:not(.mobile-menu) li a {
-  padding: 60px 20px;
-  display: block;
-  font-size: 1.25rem;
-  line-height: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -310,19 +306,19 @@ nav .menu:not(.mobile-menu) li a::after {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   width: fit-content;
-  bottom: 50px;
+  bottom: 0;
   height: 2px;
-  background: #ff852e;
+  background: #808080;
   left: -50px;
   opacity: 0;
-  width: auto;
+  width: 100%;
 }
 nav .menu:not(.mobile-menu) li:hover a {
-  color: #ff852e;
+  color: #808080;
 }
 nav .menu:not(.mobile-menu) li:hover a::after {
-  left: 20px;
-  right: 20px;
+  left: 0px;
+  right: 0px;
   opacity: 1;
 }
 nav .menu:not(.mobile-menu) .sub-menu {
