@@ -208,7 +208,7 @@ a,
 a:link,
 a:focus,
 a:visited {
-  color: $university-blue;
+  color: $black;
   text-decoration: none;
   @include font-size(16);
   @include line-height(26);
@@ -232,6 +232,9 @@ p {
   max-width: 1400px;
   @include devices(medium) {
     width: 80%;
+  }
+  @include devices(large) {
+    width: 90%;
   }
 }
 .mobile-container {
@@ -270,4 +273,27 @@ strong {
 }
 .page-section {
   padding: 60px 0;
+}
+
+.button {
+  color: $black;
+  position: relative;
+  padding-left: 10px;
+  @include easy-transform-fast;
+  &::before {
+    content: '';
+    left: 0px;
+    top: 7px;
+    background-color: $black;
+    width: 3px;
+    position: absolute;
+    height: 14px;
+    @include easy-transform-fast;
+  }
+  &:hover {
+    color: $university-blue;
+    &::before {
+      background-color: $university-blue;
+    }
+  }
 }

@@ -2,6 +2,19 @@ nav {
   background-color: $white;
   width: 100%;
   z-index: 99;
+  margin-bottom: 50px;
+  .nav-container {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: 0px;
+      height: 3px;
+      left: 15px;
+      right: 15px;
+      background-color: $black;
+    }
+  }
   .name-wrap {
     display: block;
     color: $black;
