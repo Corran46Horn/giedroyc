@@ -1,0 +1,41 @@
+.news {
+  margin-bottom: 50px;
+  .row {
+    margin: 0;
+    align-items: stretch;
+    .col {
+      flex: 1;
+      padding: 0;
+    }
+  }
+  .text-wrap {
+    background-color: sandybrown;
+    padding: 20px 50px 20px 20px;
+    height: 100%;
+    h2 {
+      margin: 0 0 30px;
+    }
+  }
+  .desc {
+    position: relative;
+    padding-left: 10px;
+    @include uppercase;
+    &::before {
+      content: '';
+      left: 0px;
+      top: 7px;
+      background-color: $black;
+      width: 3px;
+      position: absolute;
+      height: 16px;
+      @include easy-transform-fast;
+    }
+  }
+  .image-wrap {
+    max-height: 450px;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+}

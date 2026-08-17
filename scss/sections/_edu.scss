@@ -1,0 +1,56 @@
+.education {
+  margin-bottom: 50px;
+  .subject {
+    margin-bottom: 50px;
+    position: relative;
+    padding-left: 10px;
+    @include uppercase;
+    &::before {
+      content: '';
+      left: 0px;
+      top: 7px;
+      background-color: $black;
+      width: 3px;
+      position: absolute;
+      height: 16px;
+      @include easy-transform-fast;
+    }
+  }
+  .edu-wrap {
+    text-align: center;
+    padding: 0 15px;
+    position: relative;
+    .type {
+      @include uppercase;
+      margin-bottom: 20px;
+      @include font-size(18);
+      @include line-height(22);
+      font-weight: 500;
+    }
+    img {
+      margin-bottom: 20px;
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      background-color: $black;
+      width: 3px;
+      height: 100%;
+      top: 0;
+      right: -15px;
+    }
+  }
+  .col:last-of-type {
+    .edu-wrap {
+      &::after {
+        position: absolute;
+        content: '';
+        background-color: $black;
+        width: 0px;
+        height: 100%;
+        top: 0;
+        right: -15px;
+      }
+    }
+  }
+}
