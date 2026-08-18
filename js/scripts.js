@@ -16,6 +16,9 @@ $(document).ready(function () {
     dots: false,
     draggable: true,
     pauseOnHover: false,
+    arrows: true,
+    prevArrow: $('.arrows-wrap .arrow-left'),
+    nextArrow: $('.arrows-wrap .arrow-right'),
   });
 });
 
