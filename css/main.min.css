@@ -246,7 +246,7 @@ strong {
 .button {
   color: #000;
   position: relative;
-  padding-left: 10px;
+  padding: 0 10px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -259,7 +259,20 @@ strong {
   background-color: #000;
   width: 3px;
   position: absolute;
-  height: 14px;
+  height: 16px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.button::after {
+  content: "";
+  right: 0px;
+  top: -16px;
+  background-color: transparent;
+  width: 3px;
+  position: absolute;
+  height: 16px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -269,6 +282,11 @@ strong {
   color: #053d78;
 }
 .button:hover::before {
+  background-color: #053d78;
+}
+.button:hover::after {
+  content: "";
+  top: 7px;
   background-color: #053d78;
 }
 

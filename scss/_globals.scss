@@ -278,7 +278,7 @@ strong {
 .button {
   color: $black;
   position: relative;
-  padding-left: 10px;
+  padding: 0 10px;
   @include easy-transform-fast;
   &::before {
     content: '';
@@ -287,12 +287,27 @@ strong {
     background-color: $black;
     width: 3px;
     position: absolute;
-    height: 14px;
+    height: 16px;
+    @include easy-transform-fast;
+  }
+  &::after {
+    content: '';
+    right: 0px;
+    top: -16px;
+    background-color: transparent;
+    width: 3px;
+    position: absolute;
+    height: 16px;
     @include easy-transform-fast;
   }
   &:hover {
     color: $university-blue;
     &::before {
+      background-color: $university-blue;
+    }
+    &::after {
+      content: '';
+      top: 7px;
       background-color: $university-blue;
     }
   }
