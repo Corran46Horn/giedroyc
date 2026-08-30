@@ -27,6 +27,14 @@ footer {
   li {
     margin-bottom: 10px;
   }
+  .footer-wrap {
+    text-align: center;
+    &.last {
+      p {
+        text-align: left;
+      }
+    }
+  }
 }
 .footer-top {
   padding: 30px 0 15px;

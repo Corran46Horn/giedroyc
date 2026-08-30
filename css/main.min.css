@@ -496,6 +496,12 @@ footer .footer-button {
 footer li {
   margin-bottom: 10px;
 }
+footer .footer-wrap {
+  text-align: center;
+}
+footer .footer-wrap.last p {
+  text-align: left;
+}
 
 .footer-top {
   padding: 30px 0 15px;
