@@ -146,7 +146,7 @@ body,
 html {
   line-height: #{$font-size}px;
   font-size: #{$font-size}px;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Lato', sans-serif;
   position: relative;
   max-width: 100%;
   overflow-x: hidden;
@@ -256,7 +256,7 @@ strong {
   font-weight: 700;
 }
 .title {
-  font-family: 'Kanit', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 900;
   font-style: normal;
   @include font-size(50);
@@ -264,7 +264,7 @@ strong {
   margin-bottom: 10px;
 }
 .subtitle {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Lato', sans-serif;
   @include uppercase;
   @include font-size(18);
   @include line-height(22);
