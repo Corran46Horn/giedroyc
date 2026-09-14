@@ -1,6 +1,6 @@
 <?php
 
-include_once( 'gutenberg-blocks.php' );
+// include_once( 'gutenberg-blocks.php' );
 
 function register_theme_menus() {
   register_nav_menus(
@@ -77,6 +77,6 @@ add_action( 'init', 'wpdocs_codex_member_init' );
 
 // POLYLANG strings // 
 // <?php pll_e('ask');? > 
-add_action('init', function() {
-  pll_register_string('read', 'read');
-});
+// add_action('init', function() {
+//   pll_register_string('read', 'read');
+// });

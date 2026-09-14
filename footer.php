@@ -1,26 +1,33 @@
-    <section class="info">
-      <div class="container">
-        <div class="row footer-top">
-          <div class="col col-12">
-            <p>Kamila Kowalska</p>
-            <p>
-              <a href="mailto:kamila.kowalska@ug.edu.pl"
-                >kamila.kowalska@ug.edu.pl</a
-              >
-            </p>
-            <p>© 2024 by Kamila Kowalska. Wszystkie prawa zastrzeżone</p>
-          </div>
-        </div>
-      </div>
-    </section>
+
     <footer>
-      <div class="container">
+      <div class="container footer-container">
         <div class="row footer-bottom">
-          <div class="col col-12">
-            <div class="logo-wrap">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/loga.png" alt="" />
+          <div class="row">
+            <div class="col col-12 col-md-3 footer-wrap">
+              <p class="header" href="">Realizacja projektu</p>
+              <img src="<?php echo get_template_directory_uri(); ?>/images/fundacja.png" alt="">
             </div>
-          </div>
+            <div class=" col col-12 col-md-3 footer-wrap">
+              <p class="header" href="">Kontakt</p>
+              <ul>
+                <li>
+                  <a href="" class="footer-button"> napisz do nas </a>
+                </li>
+              </ul>
+              
+            </div>
+            <div class="footer-wrap col col-12 col-md-3">
+              <p class="header" href="">obserwuj nas</p>
+              <ul>
+                <li>
+                  <a href="" class="footer-button"> zapisz się </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-wrap last col col-12 col-md-3">
+              <p class="header" href="">finansowanie</p>
+              <img src="<?php echo get_template_directory_uri(); ?>/images/logo min.png" alt="">
+            </div>
         </div>
       </div>
     </footer>

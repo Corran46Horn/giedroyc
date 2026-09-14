@@ -332,6 +332,7 @@ nav {
   width: 100%;
   z-index: 99;
   margin-bottom: 50px;
+  font-weight: 600;
 }
 nav .nav-container {
   position: relative;
@@ -351,10 +352,13 @@ nav .name-wrap {
 }
 nav .menu:not(.mobile-menu) {
   list-style: none;
+  justify-content: space-between;
 }
 nav .menu:not(.mobile-menu) li {
+  position: relative;
   float: right;
-  padding: 66px 10px 0;
+  padding: 66px 10px 20px;
+  margin-bottom: -20px;
 }
 nav .menu:not(.mobile-menu) li a {
   font-size: 1.125rem;
@@ -369,36 +373,43 @@ nav .menu:not(.mobile-menu) li a {
 }
 nav .menu:not(.mobile-menu) li a::after {
   content: "";
+  background-color: #000;
+  bottom: -20px;
+  width: 90%;
+  height: 7px;
+  left: 5%;
   position: absolute;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  width: fit-content;
-  bottom: 0;
-  height: 2px;
-  background: #808080;
-  left: -50px;
-  opacity: 0;
-  width: 100%;
+  display: none;
 }
 nav .menu:not(.mobile-menu) li:hover a {
-  color: #808080;
+  color: #053d78;
 }
 nav .menu:not(.mobile-menu) li:hover a::after {
-  left: 0px;
-  right: 0px;
-  opacity: 1;
+  display: block;
+}
+nav .menu:not(.mobile-menu) li:hover .sub-menu {
+  display: block;
 }
 nav .menu:not(.mobile-menu) .sub-menu {
   display: none;
   position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #000;
+  background-color: transparent;
+  margin: 20px 0;
+}
+nav .menu:not(.mobile-menu) .sub-menu li {
+  float: none;
+  text-align: center;
+  padding: 20px 10px 20px;
+  margin: 0;
 }
 nav .menu:not(.mobile-menu) .sub-menu li a {
-  color: #fff;
+  color: #000;
+}
+nav .menu:not(.mobile-menu) .sub-menu li a::after {
+  background-color: transparent;
+}
+nav .menu:not(.mobile-menu) .sub-menu li:hover a {
+  color: #053d78;
 }
 nav .hamburger {
   position: absolute;
@@ -467,7 +478,7 @@ nav .hamburger {
 }
 
 footer {
-  background-color: #808080;
+  background-color: #1d1d1b;
   padding: 20px 0;
 }
 footer .row {
@@ -611,7 +622,7 @@ footer .footer-wrap.last p {
 }
 
 body.contrast {
-  background: url(../contrast.png) no-repeat center top #808080;
+  background: url(../contrast.png) no-repeat center top #1d1d1b;
   color: #fff;
 }
 body.contrast a,
@@ -634,7 +645,7 @@ body.contrast .fontDefault.contrast {
   display: inline-block;
 }
 body.contrast nav {
-  background-color: #808080;
+  background-color: #1d1d1b;
 }
 body.contrast nav .menu:not(.mobile-menu) li a {
   color: #fff;
