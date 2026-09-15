@@ -62,7 +62,8 @@ nav {
       display: none;
       position: absolute;
       background-color: transparent;
-      margin: 20px 0;
+      padding: 20px 0;
+      z-index: 99;
       li {
         float: none;
         text-align: center;
@@ -71,12 +72,22 @@ nav {
         a {
           color: $black;
           &::after {
-            background-color: transparent;
+            content: '';
+            background-color: $black;
+            bottom: -20px;
+            width: 90%;
+            height: 7px;
+            left: 5%;
+            position: absolute;
+            display: none;
           }
         }
         &:hover {
           a {
             color: $university-blue;
+            &::after {
+              display: block;
+            }
           }
         }
       }
