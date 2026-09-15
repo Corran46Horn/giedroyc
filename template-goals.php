@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php 
+/*Template Name: Cele projektu*/
+get_header(); 
+
+?>
 <div class="container">
   <div class="breadcrumbs-wrap">
     <?php
